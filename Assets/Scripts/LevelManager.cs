@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
         {
             ScoreKeeper.ResetScore();
         }
-        else if (SceneManager.GetActiveScene().name.Equals("SplashScreen"))
+        else if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             Invoke("LoadNextLevel", 5f);
         }
