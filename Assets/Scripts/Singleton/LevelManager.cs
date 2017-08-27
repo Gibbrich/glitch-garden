@@ -2,15 +2,11 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : Singleton<LevelManager>
 {
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name.Equals("Start Menu"))
-        {
-            ScoreKeeper.ResetScore();
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().name.Equals("00 Splash"))
         {
             Invoke("LoadNextLevel", 5f);
         }
@@ -19,7 +15,7 @@ public class LevelManager : MonoBehaviour
     public void LoadLevel(string name)
     {
         Debug.Log("New Level load: " + name);
-        Application.LoadLevel(name);
+        SceneManager.LoadScene(name);
     }
 
     public void QuitRequest()
@@ -28,7 +24,7 @@ public class LevelManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void LoadNextLevel()
+    public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
