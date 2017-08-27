@@ -1,14 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : Singleton<LevelManager>
 {
-    private void Start()
+    public float AutoLoadNextScene = 4f;
+    
+    private void Awake()
     {
-        if (SceneManager.GetActiveScene().name.Equals("00 Splash"))
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        MusicManager.Instance.PlaySceneMusic(scene.buildIndex, scene.buildIndex != 0);
+        
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            Invoke("LoadNextLevel", 5f);
+            FindObjectOfType<FaderManager>().FadeOut(AutoLoadNextScene);
         }
     }
 

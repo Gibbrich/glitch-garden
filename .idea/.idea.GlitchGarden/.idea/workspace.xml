@@ -2,28 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="089223e1-287b-4143-9663-39d5c73a7b5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Music Manager.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Music Manager.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/ScoreKeeper.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/ScoreKeeper.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs.meta" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/MusicManager.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/MusicManager.cs.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/Music Player.prefab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/Music Player.prefab.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreKeeper.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreKeeper.cs.meta" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FadeIn.anim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FadeIn.anim.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FadeOut.anim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FadeOut.anim.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FaderController.controller" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Animations/Scene/FaderController.controller.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fader.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fader.prefab.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Start Menu.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Start Menu.prefab.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseMonoBehaviour.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseMonoBehaviour.cs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/FaderManager.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/FaderManager.cs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/01b Options.unity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/01b Options.unity.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/02 Level 01.unity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/02 Level 01.unity.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/03a Win.unity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/03a Win.unity.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/03b Lose.unity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/_Scenes/03b Lose.unity.meta" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/Image.controller" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/Image.controller.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/SplashScreenIdle.anim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/SplashScreenIdle.anim.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/SplashScreenLoader.anim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Animations/SplashScreenLoader.anim.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/_Scenes/Win Screen.unity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/_Scenes/Win Screen.unity.meta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.GlitchGarden/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchGarden/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/Music Manager.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/Music Manager.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/00 Splash.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/00 Splash.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/01a Start.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/01a Start.unity" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" />
@@ -37,14 +53,80 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MusicManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <marker date="1503838966873" expanded="false" signature="6:113" ph="..." />
+                <marker date="1503838966873" expanded="true" signature="166:991" ph="{...}" />
+                <marker date="1503838966873" expanded="true" signature="316:379" ph="{...}" />
+                <marker date="1503838966873" expanded="true" signature="443:989" ph="{...}" />
+                <marker date="1503838966873" expanded="true" signature="550:629" ph="{...}" />
+                <marker date="1503838966873" expanded="true" signature="642:983" ph="{...}" />
+                <marker date="1503838966873" expanded="true" signature="772:973" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <folding>
+                <marker date="1503862387949" expanded="true" signature="6:101" ph="..." />
+                <marker date="1503862387949" expanded="true" signature="154:1085" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="227:290" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="324:387" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="456:716" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="617:710" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="756:852" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="883:960" ph="{...}" />
+                <marker date="1503862387949" expanded="true" signature="993:1083" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaderManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FaderManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <marker date="1503863026920" expanded="true" signature="6:100" ph="..." />
+                <marker date="1503863026920" expanded="true" signature="143:714" ph="{...}" />
+                <marker date="1503863026920" expanded="true" signature="254:350" ph="{...}" />
+                <marker date="1503863026920" expanded="true" signature="390:443" ph="{...}" />
+                <marker date="1503863026920" expanded="true" signature="494:712" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/33/5ed578ee/Behaviour.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/f9/c4533dd8/Object.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/69/f67c1800/Debug.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3D03935D-4C70-4E01-A7B6-19C0F9853214/3c/e29ac3cd/Button.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/be/cda24bd1/Scene.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/4c/4b4d3d7b/GameObject.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/2f/2df410aa/MonoBehaviour.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FaderManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/77/988d8c3a/Component.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,6 +138,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicManager.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/69/f67c1800/Debug.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseMonoBehaviour.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3D03935D-4C70-4E01-A7B6-19C0F9853214/3c/e29ac3cd/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnStartButtonClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnButtonClickListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/base/OnButtonClickListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/OnStartButtonClickListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/base/IOnButtonClickListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scenes.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/33/5ed578ee/Behaviour.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/77/988d8c3a/Component.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/f9/c4533dd8/Object.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/FaderManager.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +243,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="SearchEverywhereHistoryKey" value="sce&#9;FILE&#9;file://D:/projects/Unity/glitch-garden/Assets/Scripts/Scenes.cs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,6 +325,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="089223e1-287b-4143-9663-39d5c73a7b5a" name="Default" comment="" />
@@ -237,7 +339,7 @@
       <workItem from="1503600712324" duration="4605000" />
       <workItem from="1503680675765" duration="2661000" />
       <workItem from="1503764067783" duration="594000" />
-      <workItem from="1503826308104" duration="7748000" />
+      <workItem from="1503826308104" duration="23091000" />
     </task>
     <task id="LOCAL-00001" summary="Some UI and music approvements">
       <created>1503606945255</created>
@@ -246,11 +348,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503606945255</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added singleton">
+      <created>1503834431291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1503834431291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17106000" />
+    <option name="totallyTimeSpent" value="32449000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,6 +381,7 @@
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -297,11 +407,12 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Some UI and music approvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some UI and music approvements" />
+    <MESSAGE value="Added singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added singleton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -387,9 +498,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/be/cda24bd1/Scene.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/MusicManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MusicManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/69/f67c1800/Debug.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseMonoBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1503837410539" expanded="false" signature="6:78" ph="..." />
+            <marker date="1503837410539" expanded="true" signature="135:444" ph="{...}" />
+            <marker date="1503837410539" expanded="true" signature="186:291" ph="{...}" />
+            <marker date="1503837410539" expanded="true" signature="342:442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3D03935D-4C70-4E01-A7B6-19C0F9853214/3c/e29ac3cd/Button.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503839751537" expanded="true" signature="0:293" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1503839751537" expanded="false" signature="301:451" ph="..." />
+            <marker date="1503839751537" expanded="true" signature="477:2717" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="482:601" ph="///   &lt;para&gt;A standard button that can be clicked in order to trigger an event.&lt;/para&gt; ... " />
+            <marker date="1503839751537" expanded="true" signature="733:2715" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="885:997" ph="///   &lt;para&gt;UnityEvent that is triggered when the button is pressed.&lt;/para&gt; ... " />
+            <marker date="1503839751537" expanded="true" signature="1042:1169" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1058:1105" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1115:1163" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1193:1205" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1231:1426" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1432:1617" ph="///   &lt;para&gt;Registered IPointerClickHandler callback.&lt;/para&gt; ... " />
+            <marker date="1503839751537" expanded="true" signature="1684:1797" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="1803:1982" ph="///   &lt;para&gt;Registered ISubmitHandler callback.&lt;/para&gt; ... " />
+            <marker date="1503839751537" expanded="true" signature="2040:2264" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="2327:2524" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="2482:2517" ph="{...}" />
+            <marker date="1503839751537" expanded="true" signature="2530:2631" ph="///   &lt;para&gt;Function definition for a button click event.&lt;/para&gt; ... " />
+            <marker date="1503839751537" expanded="true" signature="2699:2711" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/OnStartButtonClickListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/base/IOnButtonClickListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/be/cda24bd1/Scene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <marker date="1503829284156" expanded="true" signature="0:275" ph="/* Decompiled with JetBrains decompiler ... */" />
@@ -436,43 +652,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MusicManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Scenes.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="40">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/Singleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <marker date="1503838007769" expanded="false" signature="6:78" ph="..." />
+            <marker date="1503838007769" expanded="true" signature="149:1808" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="216:1590" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="234:1584" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="278:1532" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="526:665" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="821:1074" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="1221:1518" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="1307:1388" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="1622:1729" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="1670:1723" ph="{...}" />
+            <marker date="1503838007769" expanded="true" signature="1794:1806" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/f9/c4533dd8/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1500">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/77/988d8c3a/Component.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="39" lean-forward="true" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/33/5ed578ee/Behaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/2f/2df410aa/MonoBehaviour.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <marker date="1503835668173" expanded="true" signature="0:267" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1503835668173" expanded="false" signature="275:404" ph="..." />
+            <marker date="1503835668173" expanded="true" signature="427:6811" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="432:554" ph="///   &lt;para&gt;MonoBehaviour is the base class from which every Unity script derives.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="620:6809" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="629:735" ph="///   &lt;para&gt;Disabling this lets you skip the GUI layout phase.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="947:1099" ph="///   &lt;para&gt;Allow a specific instance of a MonoBehaviour to run in edit mode (only available in the editor).&lt;/par ... " />
+            <marker date="1503835668173" expanded="true" signature="1746:1926" ph="///   &lt;para&gt;Invokes the method methodName in time seconds.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="2081:2345" ph="///   &lt;para&gt;Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="2527:2630" ph="///   &lt;para&gt;Cancels all Invoke calls on this MonoBehaviour.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="2661:2712" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="2718:2880" ph="///   &lt;para&gt;Cancels all Invoke calls with name methodName on this behaviour.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="3029:3163" ph="///   &lt;para&gt;Is any invoke on methodName pending?&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="3310:3410" ph="///   &lt;para&gt;Is any invoke pending on this MonoBehaviour?&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="3439:3495" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="3501:3615" ph="///   &lt;para&gt;Starts a coroutine.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="3672:3741" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="3976:4031" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="4205:4376" ph="///   &lt;para&gt;Starts a coroutine named methodName.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="4569:4740" ph="///   &lt;para&gt;Starts a coroutine named methodName.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="4817:4914" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="4920:5209" ph="///   &lt;para&gt;Stops the first coroutine named methodName, or the coroutine stored in routine running on this behavi ... " />
+            <marker date="1503835668173" expanded="true" signature="5359:5648" ph="///   &lt;para&gt;Stops the first coroutine named methodName, or the coroutine stored in routine running on this behavi ... " />
+            <marker date="1503835668173" expanded="true" signature="5699:5764" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="5814:5866" ph="{...}" />
+            <marker date="1503835668173" expanded="true" signature="6191:6294" ph="///   &lt;para&gt;Stops all coroutines running on this behaviour.&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="6431:6585" ph="///   &lt;para&gt;Logs message to the Unity Console (identical to Debug.Log).&lt;/para&gt; ... " />
+            <marker date="1503835668173" expanded="true" signature="6630:6668" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MusicManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/MusicManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="140">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1503838966873" expanded="false" signature="6:113" ph="..." />
+            <marker date="1503838966873" expanded="true" signature="166:991" ph="{...}" />
+            <marker date="1503838966873" expanded="true" signature="316:379" ph="{...}" />
+            <marker date="1503838966873" expanded="true" signature="443:989" ph="{...}" />
+            <marker date="1503838966873" expanded="true" signature="550:629" ph="{...}" />
+            <marker date="1503838966873" expanded="true" signature="642:983" ph="{...}" />
+            <marker date="1503838966873" expanded="true" signature="772:973" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Singleton/LevelManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <marker date="1503862387949" expanded="true" signature="6:101" ph="..." />
+            <marker date="1503862387949" expanded="true" signature="154:1085" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="227:290" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="324:387" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="456:716" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="617:710" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="756:852" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="883:960" ph="{...}" />
+            <marker date="1503862387949" expanded="true" signature="993:1083" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/FaderManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1503863026920" expanded="true" signature="6:100" ph="..." />
+            <marker date="1503863026920" expanded="true" signature="143:714" ph="{...}" />
+            <marker date="1503863026920" expanded="true" signature="254:350" ph="{...}" />
+            <marker date="1503863026920" expanded="true" signature="390:443" ph="{...}" />
+            <marker date="1503863026920" expanded="true" signature="494:712" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+public class Singleton<T> : BaseMonoBehaviour where T : MonoBehaviour
 {    
     private static T instance;
 
@@ -43,6 +43,14 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             }
             
             return instance;
+        }
+    }
+    
+    protected void Start()
+    {
+        if (Instance && Instance != this)
+        {
+            Destroy(gameObject);
         }
     }
 

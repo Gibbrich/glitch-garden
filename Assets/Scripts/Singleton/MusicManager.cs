@@ -8,25 +8,29 @@ public class MusicManager : Singleton<MusicManager>
     public AudioClip[] LevelMusicChangeArray;
 
     private AudioSource audioSource;
+    private AudioClip currentPlaying;
 
-    protected void Awake()
+    private void Awake()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
         audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnDisable()
+    public void PlaySceneMusic(int sceneIndex, bool isLooping)
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        AudioClip clip = LevelMusicChangeArray[scene.buildIndex];
-        if (clip != null)
+        if (LevelMusicChangeArray.Length <= sceneIndex || LevelMusicChangeArray[sceneIndex] == null)
         {
-            audioSource.clip = clip;
-            audioSource.Play();           
+            printError("Music for this level is not set");
+        }
+        else
+        {
+            AudioClip clip = LevelMusicChangeArray[sceneIndex];
+            if (clip != null && currentPlaying != clip)
+            {
+                audioSource.clip = clip;
+                audioSource.loop = isLooping;
+                currentPlaying = clip;
+                audioSource.Play();           
+            }
         }
     }
 }
