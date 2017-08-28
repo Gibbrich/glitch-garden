@@ -13,6 +13,9 @@ public class FaderManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         fader = GetComponent<Image>();
+        
+        // in editor fader is always disabled
+        fader.enabled = true;
     }
 
     public void FadeOut(float seconds)
@@ -23,9 +26,16 @@ public class FaderManager : MonoBehaviour
     private IEnumerator Fading(float seconds)
     {
         yield return new WaitForSeconds(seconds);
+        fader.enabled = true;
         animator.SetBool("ShouldFade", true);
 
         yield return new WaitUntil(() => fader.color.a == 1);
         LevelManager.Instance.LoadNextLevel();
+    }
+
+    // called on FadeIn animation ends
+    private void HideFader()
+    {
+        fader.enabled = false;
     }
 }
