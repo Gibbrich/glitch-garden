@@ -1653,5 +1653,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a456d567667dc4c4bbdafd385d5a29a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumeSlider: {fileID: 0}
-  DifficultySlider: {fileID: 0}
+  VolumeSlider: {fileID: 1507606762}
+  DifficultySlider: {fileID: 1392907810}
