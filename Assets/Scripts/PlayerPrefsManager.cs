@@ -20,7 +20,7 @@ public class PlayerPrefsManager : BaseMonoBehaviour
         
         set
         {
-            if (value > 0 && value < 1)
+            if (value >= 0 && value <= 1)
             {
                 PlayerPrefs.SetFloat(MASTER_VOLUME_KEY, value);            
             }
@@ -40,7 +40,7 @@ public class PlayerPrefsManager : BaseMonoBehaviour
         
         set
         {
-            if (value > 0 && value < 1)
+            if (value >= 0 && value <= 1)
             {
                 PlayerPrefs.SetFloat(DIFFICULTY_KEY, value);                
             }

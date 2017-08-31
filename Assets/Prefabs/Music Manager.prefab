@@ -135,8 +135,8 @@ MonoBehaviour:
   LevelMusicChangeArray:
   - {fileID: 8300000, guid: 3cf6ad6287cbf42068bcc210b8935350, type: 3}
   - {fileID: 8300000, guid: caef3048b7ee34690b330ed6629da3c4, type: 3}
-  - {fileID: 8300000, guid: ce56434df859e475ebf2cb970b554b91, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: ce56434df859e475ebf2cb970b554b91, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

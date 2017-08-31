@@ -11,7 +11,10 @@ public class OptionsController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        VolumeSlider.value = PlayerPrefsManager.MasterVolume;
+        DifficultySlider.value = PlayerPrefsManager.Difficulty;
         
+        VolumeSlider.GetComponent<Slider>().onValueChanged.AddListener(MusicManager.Instance.ChangeVolume);
     }
 
     // Update is called once per frame
@@ -24,6 +27,14 @@ public class OptionsController : MonoBehaviour
         PlayerPrefsManager.MasterVolume = VolumeSlider.value;
         PlayerPrefsManager.Difficulty = DifficultySlider.value;
         
-        LevelManager.Instance.LoadLevel("");
+        LevelManager.Instance.LoadLevel(LevelManager.START);
+    }
+
+    private void OnDisable()
+    {
+        if (VolumeSlider)
+        {
+            VolumeSlider.GetComponent<Slider>().onValueChanged.RemoveListener(MusicManager.Instance.ChangeVolume);            
+        }
     }
 }

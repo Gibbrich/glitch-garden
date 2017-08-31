@@ -21,7 +21,7 @@ public class MusicManager : Singleton<MusicManager>
     {
         if (LevelMusicChangeArray.Length <= sceneIndex || LevelMusicChangeArray[sceneIndex] == null)
         {
-            printError(TAG, "Music for this level is not set");
+            print(TAG, "Music for this level is not set");
         }
         else
         {
@@ -34,5 +34,10 @@ public class MusicManager : Singleton<MusicManager>
                 audioSource.Play();           
             }
         }
+    }
+
+    public void ChangeVolume(float volume)
+    {
+        audioSource.volume = volume;
     }
 }
