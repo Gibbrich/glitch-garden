@@ -4,13 +4,13 @@ using UnityEngine;
 
 public abstract class BaseMonoBehaviour : MonoBehaviour
 {
-    public new static void print(object message)
+    public static void print(string tag, object message)
     {
-        MonoBehaviour.print(string.Format("[{0}] {1}", typeof(BaseMonoBehaviour), message));
+        MonoBehaviour.print(string.Format("[{0}] {1}", tag, message));
     }
 
-    public static void printError(object message)
+    public static void printError(string tag, object message)
     {
-        Debug.LogError(string.Format("[{0}] {1}", typeof(BaseMonoBehaviour), message));
+        Debug.LogError(string.Format("[{0}] {1}", tag, message));
     }
 }

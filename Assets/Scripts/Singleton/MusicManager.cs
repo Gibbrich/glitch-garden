@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : Singleton<MusicManager>
 {
+    private const string TAG = "MusicManager";
+    
     public AudioClip[] LevelMusicChangeArray;
 
     private AudioSource audioSource;
@@ -19,7 +21,7 @@ public class MusicManager : Singleton<MusicManager>
     {
         if (LevelMusicChangeArray.Length <= sceneIndex || LevelMusicChangeArray[sceneIndex] == null)
         {
-            printError("Music for this level is not set");
+            printError(TAG, "Music for this level is not set");
         }
         else
         {
