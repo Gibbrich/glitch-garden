@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerPrefsManager : BaseMonoBehaviour
+public static class PlayerPrefsManager
 {
     private const string TAG = "PlayerPrefsManager";
     
     private const string MASTER_VOLUME_KEY = "MASTER_VOLUME_KEY";
     private const string DIFFICULTY_KEY = "DIFFICULTY_KEY";
     private const string LEVEL_KEY = "level_unlocked_";
+
+    private const float MIN_DIFFICULTY = 1;
+    private const float MAX_DIFFICULTY = 3;
 
     public static float MasterVolume
     {
@@ -26,7 +29,7 @@ public class PlayerPrefsManager : BaseMonoBehaviour
             }
             else
             {
-                printError(TAG, "Master volume must be in range [0;1]");
+                Utils.printError(TAG, "Master volume must be in range [0;1]");
             }
         }
     }
@@ -35,18 +38,18 @@ public class PlayerPrefsManager : BaseMonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat(DIFFICULTY_KEY, 0);
+            return PlayerPrefs.GetFloat(DIFFICULTY_KEY, MIN_DIFFICULTY);
         } 
         
         set
         {
-            if (value >= 0 && value <= 1)
+            if (value >= MIN_DIFFICULTY && value <= MAX_DIFFICULTY)
             {
                 PlayerPrefs.SetFloat(DIFFICULTY_KEY, value);                
             }
             else
             {
-                printError(TAG, "Difficulty must be in range [0;1]");
+                Utils.printError(TAG, string.Format("Master volume must be in range [{0};{1}]", MIN_DIFFICULTY, MAX_DIFFICULTY));
             }
         }
     }
@@ -59,7 +62,7 @@ public class PlayerPrefsManager : BaseMonoBehaviour
         }
         else
         {
-            printError(TAG, "Trying to unlock level not included in build order");
+            Utils.printError(TAG, "Trying to unlock level not included in build order");
         }
     }
 
@@ -71,8 +74,14 @@ public class PlayerPrefsManager : BaseMonoBehaviour
         }
         else
         {
-            printError(TAG, "Trying to access level not included in build order");
+            Utils.printError(TAG, "Trying to access level not included in build order");
             return false;
         }
+    }
+
+    public static void SetDefaults()
+    {
+        PlayerPrefs.DeleteKey(MASTER_VOLUME_KEY);
+        PlayerPrefs.DeleteKey(DIFFICULTY_KEY);
     }
 }

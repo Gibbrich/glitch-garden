@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LevelManager : Singleton<LevelManager>
 {
+    public const string TAG = "LevelManager";
     public const string SPLASH = "00 Splash";
     public const string START = "01a Start";
     public const string OPTIONS = "01b Options";
@@ -30,9 +31,13 @@ public class LevelManager : Singleton<LevelManager>
     {
         MusicManager.Instance.PlaySceneMusic(scene.buildIndex, scene.buildIndex != 0);
         
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().name.Equals(SPLASH))
         {
             FindObjectOfType<FaderManager>().FadeOut(AutoLoadNextScene);
+        }
+        else if (SceneManager.GetActiveScene().name.Equals(LEVEL_01))
+        {
+            Utils.print(TAG, PlayerPrefsManager.Difficulty);
         }
     }
 

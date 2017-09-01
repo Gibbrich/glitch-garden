@@ -15,13 +15,14 @@ public class MusicManager : Singleton<MusicManager>
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsManager.MasterVolume;
     }
 
     public void PlaySceneMusic(int sceneIndex, bool isLooping)
     {
         if (LevelMusicChangeArray.Length <= sceneIndex || LevelMusicChangeArray[sceneIndex] == null)
         {
-            print(TAG, "Music for this level is not set");
+            Utils.print(TAG, "Music for this level is not set");
         }
         else
         {

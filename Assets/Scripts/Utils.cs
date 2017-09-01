@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class BaseMonoBehaviour : MonoBehaviour
+public static class Utils
 {
     public static void print(string tag, object message)
     {
-        MonoBehaviour.print(string.Format("[{0}] {1}", tag, message));
+        Debug.Log(string.Format("[{0}] {1}", tag, message));
     }
 
     public static void printError(string tag, object message)
