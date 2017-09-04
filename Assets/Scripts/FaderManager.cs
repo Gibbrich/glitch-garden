@@ -32,10 +32,4 @@ public class FaderManager : MonoBehaviour
         yield return new WaitUntil(() => fader.color.a == 1);
         LevelManager.Instance.LoadNextLevel();
     }
-
-    // called on FadeIn animation ends
-    private void HideFader()
-    {
-        fader.enabled = false;
-    }
 }
