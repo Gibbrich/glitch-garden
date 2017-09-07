@@ -5,12 +5,18 @@ using UnityEngine.SocialPlatforms;
 
 public class Attacker : MonoBehaviour
 {
+    private const string IS_ATTACKING_PARAMETER = "isAttacking";
+    
     [Range(0, 5f)]
-    public float WalkSpeed;
+    public float Speed;
+
+    private Animator animator;
     
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
+        
         if (GetComponent<Rigidbody2D>() == null)
         {
             Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
@@ -24,7 +30,7 @@ public class Attacker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * WalkSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * Speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,13 +41,27 @@ public class Attacker : MonoBehaviour
         }
         else if (other.tag.Equals(Tags.DEFENDER))
         {
-            print(gameObject.name + " faced defender");
-            Attack();
+            SetAttacking(1);
         }
     }
 
-    private void Attack()
+    private void StrikeCurrentTarget(float damage)
     {
-        
+        print(gameObject.name + " attacked defender by " + damage);
     }
+
+    public void SetAttacking(float damage)
+    {
+        animator.SetBool(IS_ATTACKING_PARAMETER, damage > 0);
+        if (damage > 0)
+        {
+            StrikeCurrentTarget(damage);
+        }
+    }
+    
+    public void SetSpeed(float speed)
+    {
+        Speed = speed; 
+    }
+    
 }
