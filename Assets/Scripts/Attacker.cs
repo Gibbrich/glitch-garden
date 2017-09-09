@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
-public class Attacker : MonoBehaviour
+public class Attacker : Unit
 {
-    private const string IS_ATTACKING_PARAMETER = "isAttacking";
+    private const string IS_ATTACKING = "isAttacking";
     
     [Range(0, 5f)]
     public float Speed;
 
     private Animator animator;
+    private Defender currentTarget;
+    private Health health;
     
     // Use this for initialization
     void Start()
@@ -25,6 +27,8 @@ public class Attacker : MonoBehaviour
             rb.useFullKinematicContacts = true;
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         }
+
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -38,30 +42,39 @@ public class Attacker : MonoBehaviour
         if (other.tag.Equals(Tags.PROJECTILE))
         {
             print(gameObject.name + " was hit by a projectile");
-        }
-        else if (other.tag.Equals(Tags.DEFENDER))
-        {
-            SetAttacking(1);
+            health.Value--;
         }
     }
 
+    // called by Animation event
     private void StrikeCurrentTarget(float damage)
     {
-        print(gameObject.name + " attacked defender by " + damage);
+        currentTarget.Health.Value -= damage;
     }
 
-    public void SetAttacking(float damage)
+    public void Attack(Defender target)
     {
-        animator.SetBool(IS_ATTACKING_PARAMETER, damage > 0);
-        if (damage > 0)
-        {
-            StrikeCurrentTarget(damage);
-        }
+        currentTarget = target;
+        currentTarget.Death += OnCurrentTargetDeath;
+        animator.SetBool(IS_ATTACKING, true);
+    }
+
+    private void OnCurrentTargetDeath()
+    {
+        animator.SetBool(IS_ATTACKING, false);
+        currentTarget = null;
     }
     
     public void SetSpeed(float speed)
     {
         Speed = speed; 
     }
-    
+
+    private void OnDisable()
+    {
+        if (currentTarget)
+        {
+            currentTarget.Death -= OnCurrentTargetDeath;
+        }
+    }
 }
