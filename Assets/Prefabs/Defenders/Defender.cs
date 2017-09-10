@@ -5,8 +5,4 @@ using UnityEngine;
 
 public class Defender : Unit
 {
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }

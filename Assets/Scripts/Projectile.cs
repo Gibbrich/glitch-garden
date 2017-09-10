@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField]
-    protected float damage = 100f;
+    public float Speed = 1f;
+    public float Damage = 1f;
 
-    public float Damage
+    private void Update()
     {
-        get { return damage; }
-        set { damage = value; }
+        transform.Translate(Vector3.right * Speed * Time.deltaTime);
     }
 
-    public void Hit()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        Attacker attacker = other.GetComponent<Attacker>();
+        if (attacker)
+        {
+            attacker.Health.Value -= Damage;
+            Destroy(gameObject);
+        }
     }
 }

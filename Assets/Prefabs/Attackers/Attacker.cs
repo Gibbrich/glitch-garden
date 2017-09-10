@@ -5,18 +5,17 @@ using UnityEngine.SocialPlatforms;
 
 public class Attacker : Unit
 {
-    private const string IS_ATTACKING = "isAttacking";
-    
     [Range(0, 5f)]
     public float Speed;
 
     private Animator animator;
     private Defender currentTarget;
-    private Health health;
     
     // Use this for initialization
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         animator = GetComponent<Animator>();
         
         if (GetComponent<Rigidbody2D>() == null)
@@ -35,15 +34,6 @@ public class Attacker : Unit
     void Update()
     {
         transform.Translate(Vector3.left * Speed * Time.deltaTime);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag.Equals(Tags.PROJECTILE))
-        {
-            print(gameObject.name + " was hit by a projectile");
-            health.Value--;
-        }
     }
 
     // called by Animation event
