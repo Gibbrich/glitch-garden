@@ -5,8 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Button : MonoBehaviour
 {
+    public GameObject Prefab;
     private Button[] buttons;
-    private static Button selectedButton;
+    public static GameObject selectedDefender;
     
     // Use this for initialization
     void Start()
@@ -26,6 +27,6 @@ public class Button : MonoBehaviour
             button.GetComponent<SpriteRenderer>().color = button.gameObject != gameObject ? Color.black : Color.white;
         }
 
-        selectedButton = this;
+        selectedDefender = Prefab;
     }
 }

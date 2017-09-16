@@ -7,6 +7,8 @@ public class Attacker : Unit
 {
     [Range(0, 5f)]
     public float Speed;
+    [Tooltip("Average number of seconds between appearances")]
+    public float SeenEverySeconds;
 
     private Animator animator;
     private Defender currentTarget;

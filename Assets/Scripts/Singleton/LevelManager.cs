@@ -13,7 +13,7 @@ public class LevelManager : Singleton<LevelManager>
     public const string LEVEL_02 = "02 Level 02";
     public const string LEVEL_03 = "02 Level 03";
     public const string WIN = "03a Win";
-    public const string LOSE = "03b Win";
+    public const string LOSE = "03b Lose";
     
     public float AutoLoadNextScene = 4f;
     
@@ -56,5 +56,10 @@ public class LevelManager : Singleton<LevelManager>
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void LoadNextLevel(float time)
+    {
+        Invoke("LoadNextLevel", time);
     }
 }

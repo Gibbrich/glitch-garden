@@ -36,8 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4294195053574504}
   - component: {fileID: 95168258392881748}
-  - component: {fileID: 114647040965029674}
   - component: {fileID: 61136690305804756}
+  - component: {fileID: 114647040965029674}
   - component: {fileID: 50081757624582394}
   - component: {fileID: 114315449990262572}
   - component: {fileID: 114357418850478644}
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05, y: 0.09}
+  m_Offset: {x: 0.33, y: 0.09}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1
+  SeenEverySeconds: 5
 --- !u!212 &212736326801235960
 SpriteRenderer:
   m_ObjectHideFlags: 1
