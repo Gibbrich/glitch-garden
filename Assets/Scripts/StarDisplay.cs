@@ -12,7 +12,7 @@ public class StarDisplay : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        text = FindObjectOfType<Text>();
+        text = GetComponent<Text>();
         text.text = stars.ToString();
     }
     
