@@ -6,6 +6,6 @@ public class LoseCollider : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        LevelManager.Instance.LoadLevel(LevelManager.LOSE);
+        LevelManager.Instance.LoadLevel(LevelManager.Levels.LOSE);
     }
 }

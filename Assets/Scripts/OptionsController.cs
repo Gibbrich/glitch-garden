@@ -26,7 +26,7 @@ public class OptionsController : MonoBehaviour
         PlayerPrefsManager.MasterVolume = VolumeSlider.value;
         PlayerPrefsManager.Difficulty = DifficultySlider.value;
         
-        LevelManager.Instance.LoadLevel(LevelManager.START);
+        LevelManager.Instance.LoadLevel(LevelManager.Levels.START);
     }
 
     private void SetOptionsInitialValues()

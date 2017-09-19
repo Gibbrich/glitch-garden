@@ -21,7 +21,7 @@ public class DefenderSpawner : MonoBehaviour
     {
         if (Button.selectedDefender)
         {
-            int defenderCost = Button.selectedDefender.GetComponent<Defender>().StarCost;
+            int defenderCost = Button.selectedDefender.GetComponent<Defender>().GetStarCost();
             StarDisplay.Status result = display.UseStars(defenderCost);
             if (result == StarDisplay.Status.SUCCESS)
             {

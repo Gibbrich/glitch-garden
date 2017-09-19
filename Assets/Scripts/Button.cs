@@ -20,7 +20,7 @@ public class Button : MonoBehaviour
         {
             Debug.LogWarning(name + " has no cost text");
         }
-        costText.text = Prefab.GetComponent<Defender>().StarCost.ToString();
+        costText.text = Prefab.GetComponent<Defender>().GetStarCost().ToString();
     }
 
     // Update is called once per frame

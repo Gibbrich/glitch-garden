@@ -25,16 +25,23 @@ public class Shooter : MonoBehaviour
 
         animator = GetComponent<Animator>();
         
-        // search for the AttackerSpawner, which is placed on the same lane
+        FindAttackerSpawner();
+    }
+
+    private void FindAttackerSpawner()
+    {
         foreach (AttackerSpawner spawner in FindObjectsOfType<AttackerSpawner>())
         {
-            if (Math.Abs(spawner.transform.position.y - transform.position.y) < 0.01)
+            if (Math.Abs(spawner.transform.position.y - transform.position.y) <
+                0.01)
             {
                 thisLaneSpawner = spawner;
-                break;
+                return;
             }
-            Debug.LogError(name + " can't find AttackerSpawner in lane");
         }
+        
+        // if there is no AttackerSpawner - warn designer about it
+        Debug.LogError(name + " can't find AttackerSpawner in lane");
     }
 
     private void Update()

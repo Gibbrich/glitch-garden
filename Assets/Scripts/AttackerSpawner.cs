@@ -5,24 +5,9 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
     public GameObject[] Attackers;
-//    private float[] lastSpawnTime;
-//    private Attacker attackerComponent;
-    
-    // Use this for initialization
-    void Start()
-    {
-//        lastSpawnTime = new float[Attackers.Length];
-    }
 
-    // Update is called once per frame
     void Update()
     {
-//        if (lastSpawnTime == 0 || 
-//            Time.timeSinceLevelLoad - lastSpawnTime >= attackerComponent.SeenEverySeconds)
-//        {
-//            Spawn(Attacker);
-//        }
-
         foreach (GameObject attacker in Attackers)
         {
             if (IsTimeToSpawn(attacker))
@@ -44,6 +29,5 @@ public class AttackerSpawner : MonoBehaviour
     {
         GameObject obj = Instantiate(attaker, transform.position, Quaternion.identity);
         obj.transform.parent = transform;
-//        lastSpawnTime = Time.timeSinceLevelLoad;
     }
 }

@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class Gravestone : MonoBehaviour
+public class Gravestone : Defender
 {
     private const string UNDER_ATTACK_TRIGGER = "underAttackTrigger";
     private Animator animator;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         animator = FindObjectOfType<Animator>();
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    public override void TakeDamage(float damage)
     {
-        if (other.GetComponent<Attacker>())
-        {
-            animator.SetTrigger(UNDER_ATTACK_TRIGGER);
-        }
+        base.TakeDamage(damage);
+        
+        animator.SetTrigger(UNDER_ATTACK_TRIGGER);
     }
 }

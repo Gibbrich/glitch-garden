@@ -6,14 +6,6 @@ using UnityEngine.UI;
 public class LevelManager : Singleton<LevelManager>
 {
     public const string TAG = "LevelManager";
-    public const string SPLASH = "00 Splash";
-    public const string START = "01a Start";
-    public const string OPTIONS = "01b Options";
-    public const string LEVEL_01 = "02 Level 01";
-    public const string LEVEL_02 = "02 Level 02";
-    public const string LEVEL_03 = "02 Level 03";
-    public const string WIN = "03a Win";
-    public const string LOSE = "03b Lose";
     
     public float AutoLoadNextScene = 4f;
     
@@ -31,11 +23,11 @@ public class LevelManager : Singleton<LevelManager>
     {
         MusicManager.Instance.PlaySceneMusic(scene.buildIndex, scene.buildIndex != 0);
         
-        if (SceneManager.GetActiveScene().name.Equals(SPLASH))
+        if (SceneManager.GetActiveScene().name.Equals(Levels.SPLASH))
         {
             FindObjectOfType<FaderManager>().FadeOut(AutoLoadNextScene);
         }
-        else if (SceneManager.GetActiveScene().name.Equals(LEVEL_01))
+        else if (SceneManager.GetActiveScene().name.Equals(Levels.LEVEL_01))
         {
             Utils.print(TAG, PlayerPrefsManager.Difficulty);
         }
@@ -61,5 +53,17 @@ public class LevelManager : Singleton<LevelManager>
     public void LoadNextLevel(float time)
     {
         Invoke("LoadNextLevel", time);
+    }
+    
+    public static class Levels
+    {
+        public const string SPLASH = "00 Splash";
+        public const string START = "01a Start";
+        public const string OPTIONS = "01b Options";
+        public const string LEVEL_01 = "02 Level 01";
+        public const string LEVEL_02 = "02 Level 02";
+        public const string LEVEL_03 = "02 Level 03";
+        public const string WIN = "03a Win";
+        public const string LOSE = "03b Lose";
     }
 }

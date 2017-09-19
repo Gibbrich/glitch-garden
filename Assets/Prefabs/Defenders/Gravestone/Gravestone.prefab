@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 61949113810562176}
   - component: {fileID: 50530259325509002}
   - component: {fileID: 114191199839406920}
-  - component: {fileID: 114856999581408330}
-  - component: {fileID: 114404482768202610}
   m_Layer: 0
   m_Name: Gravestone
   m_TagString: Defender
@@ -148,30 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f92c62c347a3cd544960c458dddae916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114404482768202610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1875682021032476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a068f625b97fa3c41938b1feb960dcdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StarCost: 30
---- !u!114 &114856999581408330
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1875682021032476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1eb2177e1470974dab692fa38787d37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 100
+  health: 100
+  starCost: 30
 --- !u!212 &212822963776858418
 SpriteRenderer:
   m_ObjectHideFlags: 1

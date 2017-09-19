@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
         Attacker attacker = other.GetComponent<Attacker>();
         if (attacker)
         {
-            attacker.Health.Value -= Damage;
+            attacker.TakeDamage(Damage);
             Destroy(gameObject);
         }
     }

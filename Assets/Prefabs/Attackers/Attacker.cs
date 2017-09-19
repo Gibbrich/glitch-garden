@@ -14,10 +14,8 @@ public class Attacker : Unit
     private Defender currentTarget;
     
     // Use this for initialization
-    protected override void Start()
+    protected virtual void Start()
     {
-        base.Start();
-        
         animator = GetComponent<Animator>();
         
         if (GetComponent<Rigidbody2D>() == null)
@@ -28,8 +26,6 @@ public class Attacker : Unit
             rb.useFullKinematicContacts = true;
             rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         }
-
-        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -41,7 +37,7 @@ public class Attacker : Unit
     // called by Animation event
     private void StrikeCurrentTarget(float damage)
     {
-        currentTarget.Health.Value -= damage;
+        currentTarget.TakeDamage(damage);
     }
 
     public void Attack(Defender target)
