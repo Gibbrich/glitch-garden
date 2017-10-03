@@ -54,6 +54,16 @@ public class LevelManager : Singleton<LevelManager>
     {
         Invoke("LoadNextLevel", time);
     }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
     
     public static class Levels
     {
