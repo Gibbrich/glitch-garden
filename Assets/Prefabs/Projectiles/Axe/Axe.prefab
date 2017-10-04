@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114806986404501842}
   m_Layer: 0
   m_Name: Axe
-  m_TagString: Projectile
+  m_TagString: DestroyOnWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

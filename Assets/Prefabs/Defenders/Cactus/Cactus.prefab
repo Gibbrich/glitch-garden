@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 114445318687723554}
   m_Layer: 0
   m_Name: Cactus
-  m_TagString: Defender
+  m_TagString: DestroyOnWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
